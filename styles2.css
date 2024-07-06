@@ -1,0 +1,72 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #121212; /* Dark background */
+    color: #0f0; /* Green text */
+    font-family: 'Courier New', monospace; /* Monospace font for digital look */
+}
+
+.win-banner {
+    text-align: center;
+    padding: 20px;
+    background-color: #222222; /* Dark grey for contrast */
+}
+
+.win-title {
+    color: #0f0; /* Green color */
+    margin-bottom: 20px;
+}
+
+.name-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.name-box {
+    background-color: #333333;
+    border: 1px solid #0f0;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    text-transform: uppercase; /* Styling preference for buttons */
+    font-family: 'Courier New', monospace;
+}
+
+.name-box:hover, .name-box:focus {
+    background-color: #0f0;
+    color: #121212;
+    transform: scale(1.1);
+}
+
+.check-button {
+    margin-top: 20px;
+    background-color: #333333;
+    color: #0f0;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.check-button:hover {
+    background-color: #0f0;
+    color: #121212;
+}
+
+/* Responsive adjustments if necessary */
+@media (max-width: 600px) {
+    .name-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .name-box, .check-button {
+        width: 100%;
+        text-align: center;
+    }
+}

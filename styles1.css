@@ -1,0 +1,75 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #0f0f0f; /* Dark background for a "hacking" look */
+    color: #0f0; /* Green text commonly associated with coding or hacking */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font */
+}
+
+.top-banner {
+    text-align: center;
+    padding: 20px;
+    background-color: #222; /* Slightly lighter background for the top banner */
+}
+
+.site-title {
+    margin: 10px 0;
+    font-size: 2rem;
+}
+
+.question {
+    font-size: 1.5rem;
+    color: #0f0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.content {
+    text-align: center;
+    background-color: #121212; /* Darker box for content */
+    padding: 20px;
+    border: 2px dashed #0f0; /* Styled border to mimic a hacker interface */
+    border-radius: 10px;
+}
+
+.answer-input {
+    width: 300px;
+    margin-top: 20px;
+    background-color: #333;
+    color: white;
+    border: 1px solid #0a0;
+    padding: 10px;
+    font-family: monospace;
+}
+
+.check-button {
+    display: block;
+    margin-top: 20px;
+    background-color: #333;
+    color: #0f0;
+    border: 1px solid #0f0;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: monospace;
+    width: 100%;
+}
+
+.check-button:hover {
+    background-color: #0a0a0a;
+}
+
+.answer-result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+input:focus, button:focus {
+    outline-color: #0f0;
+}
